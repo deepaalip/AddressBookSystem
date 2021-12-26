@@ -121,6 +121,18 @@ public static void editContact() {
 		}	
 	
 
+public static void deleteContact() {
+	     System.out.print("Enter first name to delete contact:- ");
+	       String deleteByName = input.next();
+               for (int i = 0; i < contacts.length-1; i++) {
+			contacts[i] = contacts[i+1];
+				System.out.println("\nSelected contact deleted successfully.");
+				break;
+		} 
+  }
+	
+
+
 			
 public static void main(String[] args) {
 	System.out.println("Welcome To Address Book Program.");
